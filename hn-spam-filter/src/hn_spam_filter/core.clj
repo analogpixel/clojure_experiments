@@ -1,5 +1,6 @@
 (ns hn-spam-filter.core
   (:require [clojure.data.json :as json]) 
+  (:use [clj-ml classifiers data])
   )
 
 (defn get-post [id] 

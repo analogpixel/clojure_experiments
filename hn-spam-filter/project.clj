@@ -6,5 +6,6 @@
   :dependencies [
                  [org.clojure/clojure "1.10.3"]
                  [org.clojure/data.json "2.4.0"]
+                 [cc.artifice/clj-ml "0.8.5"]
                  ]
   :repl-options {:init-ns hn-spam-filter.core})
