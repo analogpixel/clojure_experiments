@@ -8,4 +8,6 @@
                 [org.clojure/java.jdbc "0.7.5"]
                 [org.xerial/sqlite-jdbc "3.7.2"]
                  ]
-  :repl-options {:init-ns find-interesting-links.core})
+  :repl-options {:init-ns find-interesting-links.core}
+  :main find-interesting-links.hnlinks
+  )
