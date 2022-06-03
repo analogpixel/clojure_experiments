@@ -1,0 +1,24 @@
+;; shadow-cljs configuration
+; https://github.com/thheller/shadow-cljs
+;
+; create new app: npx create-cljs-project acme-app 
+; start dev server: npx shadow-cljs watch frontend
+; connect repl to running process: npx shadow-cljs cljs-repl frontend
+; 
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :dev-http {8080 "public"}
+ :builds
+ {
+  :frontend {:target :browser
+   :modules {:main {:init-fn acme.frontend.app/init}}
+   }
+  }
+ 
+ }
